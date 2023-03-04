@@ -47,6 +47,7 @@ app.post('/users', (req, res) => {
 app.get('/users/:id', (req, res) => {
     const id = req.params.id;
     const user = users[id];
+    console.log(user);
     res.send(user);
 });
 
